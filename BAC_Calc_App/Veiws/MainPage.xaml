@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BAC_Calc_App.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Current BAC:" FontSize="22" />
+        <Label x:Name="BacLabel" Text="0.000" FontSize="30" TextColor="Red" />
+
+        <Button Text="Add Drink" Clicked="OnAddDrinkClicked"/>
+        <Button Text="Set Next Drink Timer" Clicked="OnSetTimerClicked"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
