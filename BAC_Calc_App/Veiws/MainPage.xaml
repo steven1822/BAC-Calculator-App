@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BAC_Calc_App.MainPage">
-    
-    
+             x:Class="BAC_Calc_App.Veiws.MainPage"
+             Title = "BAC Tracker">
+
+
+
+
+    <ContentPage.ToolbarItems BarBackgroundColor ="#4d2b05">
+        <ToolbarItem Text="⚙️" Order="Primary" Clicked="onSettingsClicked"/>
+    </ContentPage.ToolbarItems>
+
 
     <VerticalStackLayout Padding="20" Spacing="15" BackgroundColor="Tan">
         <HorizontalStackLayout Padding="20" Spacing="15" HorizontalOptions="Center">
@@ -13,8 +20,12 @@
 
 
         <Button Text="🍺" TextColor="Black" FontSize="50" Clicked="OnAddDrinkClicked" BackgroundColor="DarkGreen" CornerRadius="50" WidthRequest="100" HeightRequest="100"/>
-        <Button Text="Set Next Drink Timer" Clicked="OnSetTimerClicked"/>
+        
 
     </VerticalStackLayout>
+
+    
+
+
 
 </ContentPage>

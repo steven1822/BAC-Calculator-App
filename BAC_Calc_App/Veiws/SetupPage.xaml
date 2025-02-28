@@ -6,7 +6,7 @@
     <VerticalStackLayout Padding="20" Spacing="15">
         <Label Text="Enter your weight (lbs):" FontSize="18" />
         <Entry x:Name="WeightEntry" Keyboard="Numeric" Placeholder="Enter weight"/>
-
-        <Button Text="Save and Continue" Clicked="OnSaveClicked" />
+      
+        <Button Text="Save" Clicked="OnSaveClicked" FontFamily="Sigmar" />
     </VerticalStackLayout>
 </ContentPage>

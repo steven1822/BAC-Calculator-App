@@ -13,8 +13,8 @@ public partial class SetupPage : ContentPage
             Preferences.Default.Set("UserWeight", weight);
             await DisplayAlert("Success", "Your weight has been saved!", "OK");
 
-            // Navigate to the main page
-            Application.Current.MainPage = new MainPage();
+            // Navigate back to MainPage
+            await Navigation.PopAsync();
         }
         else
         {

@@ -1,8 +1,8 @@
-﻿namespace BAC_Calc_App
+﻿namespace BAC_Calc_App.Veiws
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        
 
         public MainPage()
         {
@@ -15,10 +15,13 @@
             
         }
 
-        private void OnSetTimerClicked(object sender, EventArgs e)
+        private async void onSettingsClicked(object sender, EventArgs e)
         {
-            int timer = 0;
+            await Navigation.PushAsync(new SetupPage());
         }
+
+
+
     }
 
 }
