@@ -2,13 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BAC_Calc_App.MainPage">
+    
+    
 
-    <VerticalStackLayout Padding="20" Spacing="15">
+    <VerticalStackLayout Padding="20" Spacing="15" BackgroundColor="Tan">
+        <HorizontalStackLayout Padding="20" Spacing="15" HorizontalOptions="Center">
+            <Label Text="Current BAC:" FontFamily="Sigmar" FontSize="30" TextColor="#4d2b05"/>
+            <Label x:Name="BacLabel" FontFamily="Sigmar" Text="0.000" FontSize="30"  />
+        </HorizontalStackLayout>
 
-        <Label Text="Current BAC:" FontSize="22" />
-        <Label x:Name="BacLabel" Text="0.000" FontSize="30" TextColor="Red" />
 
-        <Button Text="Add Drink" Clicked="OnAddDrinkClicked"/>
+        <Button Text="🍺" TextColor="Black" FontSize="50" Clicked="OnAddDrinkClicked" BackgroundColor="DarkGreen" CornerRadius="50" WidthRequest="100" HeightRequest="100"/>
         <Button Text="Set Next Drink Timer" Clicked="OnSetTimerClicked"/>
 
     </VerticalStackLayout>
